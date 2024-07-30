@@ -14,7 +14,7 @@ export default {
               class="logo-nav-guest"
               src="/img/logo-guest.png"
               alt="logo-guest" />
-            <h3 class="fw-bold mb-0 ms-2">My Projects</h3>
+            <h3 class="fw-bold mb-0 ms-2">Giuseppe Rinaldi</h3>
           </div>
         </a>
 

@@ -9,13 +9,17 @@ export default {
     };
   },
   created() {
-    this.apiCall();
+    this.getProjects();
   },
   methods: {
-    apiCall() {
+    getProjects() {
       const params = {};
 
-      axios.get(store.apiUrl, { params }).then((response) => {});
+      axios.get(this.store.apiUrl, { params }).then((response) => {
+        // console.log(response);
+        this.store.projects = response.data.results;
+        // console.log(this.store.projects);
+      });
     },
   },
   components: {},
