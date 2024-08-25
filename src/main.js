@@ -1,5 +1,8 @@
 import { createApp } from "vue";
 
+// Import router
+import { router } from "./router";
+
 //import style
 import "./assets/scss/main.scss";
 
@@ -13,4 +16,4 @@ import "./scss/styles.scss";
 import * as bootstrap from "bootstrap";
 
 //app mount
-createApp(App).mount("#app");
+createApp(App).use(router).mount("#app");
