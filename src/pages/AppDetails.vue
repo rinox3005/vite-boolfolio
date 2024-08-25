@@ -56,13 +56,13 @@ export default {
     <p>{{ project.key_features }}</p>
 
     <router-link :to="{ name: 'projects' }" class="btn btn-primary"
-      >Back to projects</router-link
+      ><i class="fas fa-chevron-left me-3"></i>Back to projects</router-link
     >
     <a
       :href="project.link_to_website"
-      class="btn btn-primary ms-2"
+      class="btn btn-danger ms-2"
       v-if="project.link_to_website"
-      >Visit</a
+      ><i class="fas fa-globe me-2"></i>Visit</a
     >
   </div>
 </template>

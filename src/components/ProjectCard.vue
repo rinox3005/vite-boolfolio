@@ -29,13 +29,13 @@ export default {
       <router-link
         :to="{ name: 'details', params: { slug: project.slug } }"
         class="btn btn-primary"
-        >Details</router-link
+        ><i class="fas fa-eye me-2"></i>Details</router-link
       >
       <a
         :href="project.link_to_website"
-        class="btn btn-primary ms-2"
+        class="btn btn-danger ms-2"
         v-if="project.link_to_website"
-        >Visit</a
+        ><i class="fas fa-globe me-2"></i>Visit</a
       >
     </div>
   </div>

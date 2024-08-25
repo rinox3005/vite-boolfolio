@@ -45,7 +45,7 @@ export default {
 <template>
   <main>
     <div class="container">
-      <h1 class="my-4">My Projects</h1>
+      <h1 class="my-4 text-center fw-semibold">My Lastest Projects</h1>
       <div class="row justify-content-center">
         <div
           class="col-sm-6 col-md-4 col-lg-3"

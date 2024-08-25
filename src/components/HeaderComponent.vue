@@ -31,6 +31,11 @@ export default {
                 >Projects</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link :to="{ name: 'about' }" class="nav-link"
+                >About Me</router-link
+              >
+            </li>
           </ul>
 
           <!-- Right Side Of Navbar -->
