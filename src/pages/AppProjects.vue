@@ -19,13 +19,16 @@ export default {
     getProjects(page) {
       const params = { page };
 
-      axios.get(this.store.apiUrl, { params }).then((response) => {
-        // console.log(response);
-        this.store.projects = response.data.results.data;
-        this.currentPage = response.data.results.current_page;
-        this.totalPages = response.data.results.last_page;
-        // console.log(this.store.projects);
-      });
+      axios
+        .get(this.store.apiUrl + this.store.endPoints.projectsList, { params })
+        .then((response) => {
+          // console.log(response);
+          this.store.projects = response.data.results.data;
+          this.currentPage = response.data.results.current_page;
+          this.totalPages = response.data.results.last_page;
+          // console.log(this.store.projects);
+        })
+        .catch((error) => console.log(error));
     },
     goToPage(page) {
       if (page >= 1 && page <= this.totalPages) {
